@@ -1,0 +1,49 @@
+body {
+    font-size: 1em;
+}
+h1, h2 {
+    font-weight: 100;
+}
+h1 {
+    color: darkblue;
+    font-size: 1.5em;
+}
+h2 {
+    color: lightblue;
+    font-size: 1em;
+    font-style: italic;
+}
+.customer-info > label,
+.books input:first-child {
+    margin-left: 2.5em;
+}
+input {
+    margin-top: 1em;
+}
+input:not(:last-child) {
+    width: 300px;
+}
+input[type="number"] {
+    width: 80px;
+}
+.customer-info,
+.books {
+    padding: 1em;
+    border: 2px solid #000;
+    width: 600px;
+    position: relative;
+    margin-top: 1em;
+}
+.customer-info::before {
+    content: "Customer Info";
+    position: absolute;
+    top: -0.7em;
+    padding: 1px;
+    background-color: #fff;
+}
+label[for="book"] {
+    top: -0.7em;
+    padding: 1px;
+    position: absolute;
+    background-color: #fff;
+}
